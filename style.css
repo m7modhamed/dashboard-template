@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.menu{
+    position: relative;
+    background-color: #123;
+    width: 60px;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: 0.6s 0.1s;
+}
+
+
+.menu:hover{
+    width: 260px;
+}
+.profile{
+    display: flex;
+    gap: 30px;  
+    align-items: center;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+    
+}
+.img-box img{
+    width: 100%;
+}
+
+.profile h2{
+    font-size: large;
+    text-transform: capitalize;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+} 
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+
+ul li a:hover, .active ,.card:hover ,td:hover{
+    background-color: #ffffff55;
+}
+
+.logout{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.logout a{
+  background-color: #a00;
+}
+
+ul li a i{
+    font-size: 30px;
+}
+
+
+.content{
+    width: 100%;
+    margin: 25px 50px;
+}
+
+.title-info{
+    background-color: rgb(21, 106, 242);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: large;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0px;
+
+}
+
+.card{
+background-color: #123;
+height: 150px;
+flex-basis: 150px;
+flex-grow: 1;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 10px;
+font-size: 20px;
+transition: 0.5s;
+}
+
+
+.card i{
+    font-size: 40px;
+}
+
+.card .data{
+    text-align: center;
+}
+
+.card .data span{
+    font-size: 30px;
+}
+
+
+table{
+width: 100%;
+text-align: center;
+border-spacing: 10px;
+}
+
+th ,td{
+    background-color: #123;
+    padding: 10px ;
+   border-radius: 10px;
+   height: 40px;
+}
+
+th{
+    background-color: rgb(21, 106, 242);
+}
+
+
+.price ,.count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+
+}
+.count{
+    background-color: gold;
+    color: #001;
+}
